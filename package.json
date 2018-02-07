@@ -1,8 +1,8 @@
 {
   "name": "react-show-more-list",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A unopinionated component to handle showing more results",
-  "main": "index.js",
+  "main": "dist/react-show-more-list.js",
   "scripts": {
     "build": "bili --js babel --format cjs,es,umd,umd-min --external react",
     "prebuild": "yarn test:fast",
@@ -20,7 +20,6 @@
   "files": [
     "dist"
   ],
-  "main": "dist/react-show-more-list.js",
   "module": "dist/react-show-more-list.es.js",
   "keywords": [
     "react",
