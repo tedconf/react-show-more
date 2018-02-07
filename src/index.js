@@ -1,6 +1,13 @@
 import { Component } from 'react';
 
 class ShowMore extends Component {
+  static defaultProps = {
+    by: 1,
+    onEnd: null,
+    replace: false,
+    items: [],
+  };
+
   constructor(props) {
     super(props);
 
@@ -48,13 +55,5 @@ class ShowMore extends Component {
     return null;
   }
 }
-
-ShowMore.defaultProps = {
-  by: 1,
-  onEnd: null,
-  replace: false,
-  items: [],
-};
-
 
 export default ShowMore;
