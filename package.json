@@ -3,6 +3,8 @@
   "version": "0.3.0",
   "description": "A unopinionated component to handle showing more results",
   "main": "dist/react-show-more-list.js",
+  "module": "dist/react-show-more-list.es.js",
+  "browser": "dist/react-show-more-list.min.js",
   "scripts": {
     "build": "bili --js babel --format cjs,es,umd,umd-min --external react",
     "prebuild": "yarn test:fast",
@@ -20,7 +22,6 @@
   "files": [
     "dist"
   ],
-  "module": "dist/react-show-more-list.es.js",
   "keywords": [
     "react",
     "render-prop",
