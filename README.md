@@ -1,16 +1,16 @@
-# Show More
+# Show More Items
 
 ## install
 
 ```
-yarn add react-show-more
+yarn add react-show-more-items
 ```
 
 ## use
 
 ```jsx
 import React from 'react';
-import ShowMore from 'react-show-more';
+import ShowMore from 'react-show-more-items';
 
 const MyLongComponent = ({ listItems }) => (
   <ShowMore

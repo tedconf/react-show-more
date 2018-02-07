@@ -2,3 +2,5 @@
 /dist
 /coverage
 /spec
+
+yarn-error.log
