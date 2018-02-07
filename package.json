@@ -1,7 +1,10 @@
 {
   "name": "@tedconf/react-show-more",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A unopinionated component to handle showing more results",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/react-show-more-list.js",
   "module": "dist/react-show-more-list.es.js",
   "browser": "dist/react-show-more-list.min.js",
