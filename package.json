@@ -17,6 +17,11 @@
     "type": "git",
     "url": "git+ssh://git@github.com/tedconf/react-show-more.git"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/react-show-more-list.js",
+  "module": "dist/react-show-more-list.es.js",
   "keywords": [
     "react",
     "render-prop",
