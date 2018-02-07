@@ -89,5 +89,8 @@
   "jest-junit": {
     "output": "./spec/reports/test-results.xml",
     "ancestorSeparator": " › "
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
