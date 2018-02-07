@@ -3,14 +3,16 @@
 ## install
 
 ```
-yarn add @tedconf/react-show-more
+yarn add react-show-more-list
 ```
 
 ## use
 
+[Here's a CodeSandbox demo](https://codesandbox.io/s/xjykw83n7z)
+
 ```jsx
 import React from 'react';
-import ShowMore from '@tedconf/react-show-more';
+import ShowMore from 'react-show-more-list';
 
 const MyLongComponent = ({ listItems }) => (
   <ShowMore
