@@ -3,14 +3,14 @@
 ## install
 
 ```
-yarn add react-show-more-items
+yarn add @tedconf/react-show-more
 ```
 
 ## use
 
 ```jsx
 import React from 'react';
-import ShowMore from 'react-show-more-items';
+import ShowMore from '@tedconf/react-show-more';
 
 const MyLongComponent = ({ listItems }) => (
   <ShowMore
@@ -31,7 +31,12 @@ const MyLongComponent = ({ listItems }) => (
             </li>
           ))}
         </ul>
-        <button onClick={() => { onMore(); }}>more</button>
+        <button
+          disabled={!onMore}
+          onClick={() => { if (!!onMore) onMore(); }}
+        >
+          more
+        </button>
       </React.Fragment>
     )}
   </ShowMore>

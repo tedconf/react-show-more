@@ -1,5 +1,5 @@
 {
-  "name": "react-show-more-list",
+  "name": "@tedconf/react-show-more",
   "version": "0.2.0",
   "description": "A unopinionated component to handle showing more results",
   "main": "dist/react-show-more-list.js",
