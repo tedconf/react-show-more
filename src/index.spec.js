@@ -76,7 +76,7 @@ describe('<ShowMore /> with defaults', () => {
   });
 
   test('props:onEnd is null when not provided', () => {
-    expect(index.find('#onEnd').text()).toBe('null');
+    expect(index.find('#onEnd').text()).toBe('');
   });
 });
 
