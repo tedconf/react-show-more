@@ -27,7 +27,7 @@ global.MOCK = Object.freeze({
     ],
   },
   ADVANCED: {
-    by: 3,
+    by: 4,
     replace: true,
     onEnd: jest.fn(),
     items: [

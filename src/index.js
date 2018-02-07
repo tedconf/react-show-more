@@ -29,7 +29,14 @@ class ShowMore extends Component {
 
   getItemsChunk = current => items => items.slice(current[0], current[1] + 1);
 
-  isLastChunk = by => chunk => chunk[1] >= (this.props.items.length - 1);
+  isLastChunk = by => chunk => {
+    const { onEnd } = this.props;
+    const isLast = chunk[1] >= (this.props.items.length - 1);
+    if (isLast && onEnd) {
+      onEnd();
+    }
+    return isLast;
+  }
 
   render() {
     const onMore = this.onMore;
@@ -42,6 +49,7 @@ class ShowMore extends Component {
     } = this.props;
 
     const chunk = this.getItemsChunk(current)(items);
+
     const isLastPage = this.isLastChunk(by)(current);
     if(typeof children === 'function') {
       return children({
@@ -49,7 +57,7 @@ class ShowMore extends Component {
         by,
         onEnd,
         all: items,
-        onMore: isLastPage ? onEnd : onMore,
+        onMore: isLastPage ? () => { onEnd(); } : onMore,
       });
     }
     return null;
