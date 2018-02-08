@@ -1,5 +1,5 @@
 {
-  "name": "react-show-more-list",
+  "name": "@tedconf/react-show-more",
   "version": "0.5.2",
   "description": "A unopinionated component to handle showing more results",
   "publishConfig": {
@@ -12,7 +12,7 @@
     "build": "bili --js babel --format cjs,es,umd,umd-min --external react",
     "prebuild": "yarn test:fast",
     "prepush": "yarn test:fast",
-    "prepublish": "yarn build",
+    "prepublishOnly": "yarn build",
     "test": "yarn test:fast --ci --colors --silent --testResultsProcessor=\"jest-junit\" --coverage",
     "test:fast": "jest --colors",
     "test:watch": "jest --watch",

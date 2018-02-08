@@ -3,7 +3,7 @@
 ## install
 
 ```
-yarn add react-show-more-list
+yarn add @tedconf/react-show-more
 ```
 
 ## use
@@ -12,7 +12,7 @@ yarn add react-show-more-list
 
 ```jsx
 import React from 'react';
-import ShowMore from 'react-show-more-list';
+import ShowMore from 'react-show-more';
 
 const MyLongComponent = ({ listItems }) => (
   <ShowMore
