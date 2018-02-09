@@ -1,4 +1,6 @@
 # React Show More
+[![Travis](https://img.shields.io/travistedconf/react-show-more.svg?style=flat-square)](https://travis-ci.org/tedconf/react-show-more)
+
 
 Ever need a component which allows you to display a certain number of items in
 a list, then allow a user to show that many more, over and over, until they

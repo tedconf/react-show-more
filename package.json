@@ -51,6 +51,7 @@
     "babel-preset-stage-0": "6.24.1",
     "bili": "2.2.6",
     "commitizen": "2.9.6",
+    "coveralls": "3.0.0",
     "cz-emoji": "1.1.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
