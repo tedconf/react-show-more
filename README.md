@@ -12,6 +12,8 @@ reach the end of the list?
 `@tedconf/react-show-more` does just that while giving you complete control of
 your style by using [render props](https://reactjs.org/docs/render-props.html).
 
+![`@tedconf/react-show-more in action`](https://media.giphy.com/media/xUOwFTTRWEJmrLJJ0A/giphy.gif)
+
 ## install
 
 ```
