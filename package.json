@@ -73,7 +73,6 @@
     "collectCoverageFrom": [
       "src/**/*.js"
     ],
-    "testResultsProcessor": "./node_modules/jest-junit",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
@@ -84,9 +83,5 @@
     "roots": [
       "<rootDir>/src"
     ]
-  },
-  "jest-junit": {
-    "output": "./spec/reports/test-results.xml",
-    "ancestorSeparator": " › "
   }
 }
