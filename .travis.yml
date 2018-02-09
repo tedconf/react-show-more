@@ -1,0 +1,12 @@
+{
+  "language": "node_js",
+  "cache": {
+    "directories": [
+      "~/.npm"
+    ]
+  },
+  "node_js": "9",
+  "group": "stable",
+  "dist": "trusty",
+  "os": "linux"
+}
