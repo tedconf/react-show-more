@@ -33,7 +33,7 @@
     "more"
   ],
   "author": "Vince Speelman",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tedconf/react-show-more/issues"
   },
@@ -42,7 +42,6 @@
     "react": ">=15"
   },
   "devDependencies": {
-    "@types/react": "16.0.36",
     "babel-jest": "22.1.0",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.6.1",
@@ -57,11 +56,9 @@
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.1",
     "jest": "22.1.4",
-    "microbundle": "0.4.3",
     "raf": "3.4.0",
     "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "rollup-plugin-typescript2": "0.11.0"
+    "react-dom": "16.2.0"
   },
   "jest": {
     "moduleFileExtensions": [

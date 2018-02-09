@@ -1,6 +1,9 @@
 # React Show More
-[![Travis](https://img.shields.io/travistedconf/react-show-more.svg?style=flat-square)](https://travis-ci.org/tedconf/react-show-more)
-
+[![Build Status](https://img.shields.io/travis/tedconf/react-show-more.svg?style=flat-square)](https://travis-ci.org/tedconf/react-show-more)
+[![Test Coverage](https://img.shields.io/coveralls/github/tedconf/react-show-more.svg?style=flat-square)](https://coveralls.io/github/tedconf/react-show-more)
+[![npm](https://img.shields.io/npm/dt/@tedconf/react-show-more.svg?style=flat-square)](https://www.npmjs.com/package/@tedconf/react-show-more)
+[![license](https://img.shields.io/npm/l/@tedconf/react-show-more.svg?style=flat-square)]()
+[![dependencies](https://img.shields.io/david/tedconf/react-show-more.svg?style=flat-square)]()
 
 Ever need a component which allows you to display a certain number of items in
 a list, then allow a user to show that many more, over and over, until they
