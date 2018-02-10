@@ -1,3 +1,17 @@
+<a name="1.1.0"></a>
+## 1.1.0 (2018-02-10)
+
+* chore(npm): remove semantic-release-cli dep ([8856972](https://github.com/tedconf/react-show-more/commit/8856972))
+* ci(npm): bump semantic release to fix `git push` issue ([2f206d9](https://github.com/tedconf/react-show-more/commit/2f206d9))
+* ci(npm): set up automatic releases ([bab2fc9](https://github.com/tedconf/react-show-more/commit/bab2fc9))
+* fix(changelog): add git changelog to verify step ([51f6413](https://github.com/tedconf/react-show-more/commit/51f6413))
+* docs(changelog): generate changelog automatically ([529d8df](https://github.com/tedconf/react-show-more/commit/529d8df))
+* feat(render): throw on non-function ([4bd4d2b](https://github.com/tedconf/react-show-more/commit/4bd4d2b))
+* style: add flow types and linting ([bb71905](https://github.com/tedconf/react-show-more/commit/bb71905))
+* refactor(chunk): remove `by` from chunk calculation ([7c50956](https://github.com/tedconf/react-show-more/commit/7c50956))
+
+
+
 <a name="1.0.1"></a>
 ## <small>1.0.1 (2018-02-09)</small>
 

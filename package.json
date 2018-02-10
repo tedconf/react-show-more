@@ -1,6 +1,6 @@
 {
   "name": "@tedconf/react-show-more",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A unopinionated component to handle showing more results",
   "publishConfig": {
     "access": "public"
