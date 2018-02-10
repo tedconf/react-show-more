@@ -238,3 +238,18 @@ describe('<ShowMore /> with advanced config & \'perfect\' `by` number', () => {
     expect(MOCK.ADVANCED.onEnd).toHaveBeenCalledTimes(2);
   });
 });
+
+describe('<ShowMore /> with incorrect shildren', () => {
+  test('tells us we need a function', () => {
+    expect(() => {
+      shallow(
+        <ShowMore
+          {...MOCK.SIMPLE}
+        >
+          foo
+        </ShowMore>,
+      );
+    }).toThrow(/function/);
+  });
+});
+

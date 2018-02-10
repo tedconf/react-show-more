@@ -81,7 +81,7 @@ class ShowMore extends Component<ShowMoreShape, State> {
         onMore: isLastPage ? null : onMore,
       });
     }
-    return null;
+    throw new Error('`props.children` must be a function');
   }
 }
 
