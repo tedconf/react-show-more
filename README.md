@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/@tedconf/react-show-more.svg?style=flat-square)](https://www.npmjs.com/package/@tedconf/react-show-more)
 [![license](https://img.shields.io/npm/l/@tedconf/react-show-more.svg?style=flat-square)]()
 [![dependencies](https://img.shields.io/david/tedconf/react-show-more.svg?style=flat-square)]()
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
 Ever need a component which allows you to display a certain number of items in
 a list, then allow a user to show that many more, over and over, until they
