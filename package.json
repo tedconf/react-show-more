@@ -113,6 +113,21 @@
       "<rootDir>/src"
     ]
   },
+  "analyzeCommits": {
+    "releaseRules": [
+      {"type": "docs", "scope":"README", "release": "patch"},
+      {"type": "build", "release": "patch"},
+      {"type": "revert", "release": "patch"},
+      {"type": "refactor", "release": "patch"},
+      {"type": "style", "release": "patch"},
+      {"type": "feat", "release": "minor"},
+      {"type": "fix", "release": "patch"},
+      {"type": "perf", "release": "patch"}
+    ],
+    "parserOpts": {
+      "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+    }
+  },
   "release": {
     "verifyConditions": [
       "@semantic-release/changelog",
@@ -124,7 +139,6 @@
       }
     ],
     "publish": [
-      "@semantic-release/changelog",
       "@semantic-release/npm",
       {
         "path": "@semantic-release/git",
