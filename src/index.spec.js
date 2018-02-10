@@ -1,5 +1,7 @@
 /* eslint-env jest */
+/* globals shallow, MOCK */
 
+import React from 'react';
 import ShowMore from './';
 
 describe('<ShowMore /> with defaults', () => {
@@ -39,7 +41,7 @@ describe('<ShowMore /> with defaults', () => {
           </div>
         </React.Fragment>
       )}
-    </ShowMore>
+    </ShowMore>,
   );
 
   test('renders children', () => {
@@ -89,7 +91,6 @@ describe('<ShowMore /> with advanced config', () => {
         current,
         onMore,
         by,
-        onEnd,
         all,
       }) => (
         <React.Fragment>
@@ -114,7 +115,7 @@ describe('<ShowMore /> with advanced config', () => {
           </div>
         </React.Fragment>
       )}
-    </ShowMore>
+    </ShowMore>,
   );
 
   test('renders children', () => {
@@ -150,7 +151,7 @@ describe('<ShowMore /> with advanced config', () => {
 
   test('props:by provides current `by` value', () => {
     const actual = index.find('#by').text();
-    const expected = '4'
+    const expected = '4';
     expect(actual).toBe(expected);
   });
 
@@ -169,7 +170,6 @@ describe('<ShowMore /> with advanced config & \'perfect\' `by` number', () => {
         current,
         onMore,
         by,
-        onEnd,
         all,
       }) => (
         <React.Fragment>
@@ -194,7 +194,7 @@ describe('<ShowMore /> with advanced config & \'perfect\' `by` number', () => {
           </div>
         </React.Fragment>
       )}
-    </ShowMore>
+    </ShowMore>,
   );
 
   test('renders children', () => {
@@ -230,7 +230,7 @@ describe('<ShowMore /> with advanced config & \'perfect\' `by` number', () => {
 
   test('props:by provides current `by` value', () => {
     const actual = index.find('#by').text();
-    const expected = '3'
+    const expected = '3';
     expect(actual).toBe(expected);
   });
 

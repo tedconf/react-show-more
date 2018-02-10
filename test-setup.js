@@ -1,4 +1,3 @@
-/* global React, shallow, render, mount */
 const React = require('react');
 const {
   configure,

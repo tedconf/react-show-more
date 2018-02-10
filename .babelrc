@@ -1,5 +1,6 @@
 {
   "presets": [
+    "flow",
     [
       "env",
       {
@@ -12,6 +13,7 @@
   "env": {
     "test": {
       "presets": [
+        "flow",
         "env",
         "react",
         "stage-0"

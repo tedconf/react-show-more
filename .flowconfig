@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/config-chain/test/broken.json
+<PROJECT_ROOT>/node_modules/fbjs/.*
+
+[include]
+src/*
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

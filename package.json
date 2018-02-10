@@ -10,12 +10,14 @@
   "browser": "dist/react-show-more-list.min.js",
   "scripts": {
     "build": "bili --js babel --format cjs,es,umd,umd-min --external react",
-    "prebuild": "yarn test:fast",
+    "prebuild": "yarn test:fast && yarn lint && yarn typecheck",
+    "lint": "eslint src",
+    "typecheck": "yarn flow check",
     "prepush": "yarn test:fast",
     "prepublishOnly": "yarn build",
     "test": "yarn test:fast --ci --colors --silent --coverage",
     "test:fast": "jest --colors",
-    "test:watch": "jest --watch",
+    "test:watch": "yarn flow && jest --watch",
     "cz": "git-cz",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
@@ -23,6 +25,20 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tedconf/react-show-more.git"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "plugins": [
+      "flowtype"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "function-paren-newline": 0,
+      "react/jsx-filename-extension": 0
+    }
   },
   "files": [
     "dist"
@@ -47,6 +63,7 @@
     "@semantic-release/changelog": "1.0.0",
     "@semantic-release/git": "3.0.0",
     "@semantic-release/npm": "3.0.1",
+    "babel-eslint": "8.2.1",
     "babel-jest": "22.1.0",
     "babel-plugin-external-helpers": "6.22.0",
     "babel-preset-env": "1.6.1",
@@ -61,6 +78,12 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "0.65.0",
     "jest": "22.1.4",
     "raf": "3.4.0",
     "react": "16.2.0",
@@ -102,5 +125,9 @@
       "@semantic-release/npm",
       "@semantic-release/git"
     ]
+  },
+  "dependencies": {
+    "babel-preset-flow": "6.23.0",
+    "eslint-plugin-flowtype": "2.43.0"
   }
 }
