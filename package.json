@@ -5,11 +5,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/react-show-more-list.js",
-  "module": "dist/react-show-more-list.es.js",
-  "browser": "dist/react-show-more-list.min.js",
+  "main": "dist/@tedconf/react-show-more.js",
+  "module": "dist/@tedconf/react-show-more.es.js",
+  "browser": "dist/react-show-more.min.js",
   "scripts": {
-    "build": "bili --js babel --format cjs,es,umd,umd-min --external react",
+    "build": "bili --js babel --format cjs,es,umd,umd-min --moduleName ReactShowMore --external react",
     "prebuild": "yarn test:fast && yarn lint && yarn typecheck",
     "lint": "eslint src",
     "typecheck": "yarn flow check",
