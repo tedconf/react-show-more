@@ -88,11 +88,12 @@ render(
 
 `@tedconf/react-show-more` takes a few props:
 
-|Required |Prop       |Type     |Purpose                                      |
-|--------:|-----------|---------|---------------------------------------------|
-|✔        |`items`    |__Array__|the entire list of items you'd like to act on|
-|1        |`by`       |__Int__  |the number of items to show at a time        |
-|false    |`replace`  |__Array__|should it add to the results, or replace them|
+|Required |Prop       |Type         |Purpose                                                               |
+|--------:|-----------|-------------|----------------------------------------------------------------------|
+|✔        |`items`    |__Array__    |the entire list of items you'd like to act on                         |
+|1        |`by`       |__Int__      |the number of items to show at a time                                 |
+|false    |`replace`  |__Boolean__  |should it add to the results, or replace them                         |
+|() => {} |`onEnd`    |__Function__ |the function to be called when reaching the end of the list of items|
 
 ### props passed to the child function
 
@@ -103,5 +104,5 @@ comes with some useful arguments:
 |---------|--------------------|----------------------------------------------|
 |`current`|__Array__           |the currently visible results                 |
 |`by`     |__Int__             |same number you passed in as `by` prop        |
-|`all`    |__Array__           |same array you passed in as `items prop       |
+|`all`    |__Array__           |same array you passed in as `items` prop      |
 |`onMore` |__Function \| null__|returns either a __function that tells the component to update the `current` prop__ with the next result or __null__, which means there are no results left to show|
