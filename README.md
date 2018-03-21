@@ -23,7 +23,8 @@ yarn add @tedconf/react-show-more
 
 ## use
 
-[Here's a CodeSandbox demo](https://codesandbox.io/s/xjykw83n7z)
+* [Here's a CodeSandbox demo](https://codesandbox.io/s/xjykw83n7z)
+* [Here's an Infinite Scroll demo](https://codesandbox.io/s/43kw07j279)
 
 ```jsx
 import React from 'react';
